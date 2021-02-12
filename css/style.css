@@ -13,6 +13,7 @@ body {
     box-shadow: 6px 6px 20px 0px #000000;
 }
 
+/* sidebar section */
 .sidebar-section {
     padding-top: 40px;
     background: #1E2939;
@@ -23,38 +24,188 @@ body {
     max-width: 370px;
     height: auto;
 }
-/*  
-li {
-    color:#595959;
-}  */
 
-.about-me-section {
-    background: rgb(228, 107, 107);
+.sidebar-block {
+    margin: 48px 40px;
 }
+
+.sidebar-block__title {
+    margin:0;
+    margin-bottom: 8px;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+}
+
+.sidebar-block ul {
+    list-style: none;
+    padding-left: 1rem;
+    margin-top: 0;
+}
+  
+.sidebar-block li {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;   
+    opacity: 0.85;
+}
+
+.sidebar-block li::before {
+    content: "\2022";  
+    color: #FB6D3A; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1rem; 
+    margin-left: -1rem; 
+}
+
+.sidebar-block a {
+    color: white;
+    opacity: 0.5;
+}
+
+.sidebar-block a:hover, a:active {
+    color: white;
+    opacity: 1;
+}
+
+.sidebar-block a.tel {
+    text-decoration: none;    
+}
+
+.sidebar-block-item {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.sidebar-block-item__type {
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+/* main section */
+.main-section-container {
+    padding: 100px 88px;
+    width: 625px;
+}
+
+/* about-me section */
+.about-me-section {}
 
 .about-me__profession {
     font-size: 14px;
+    line-height: 17px;
     font-weight: 700;
+    margin-bottom: 18px;
 }
 
 .about_me__name {
     font-size: 45px;
+    line-height: 55px;
+    margin: 0;
     font-weight: 700;
 }
 
 .about-me__description {
     font-size: 14px;
+    line-height: 24px;
     color:#595959;
+    width: 400px;
 }
 
-.projects-section {
-background: rgb(228, 200, 107);
+/* general section styles */
+.section__title {
+    margin:0;
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 27px;
 }
 
-.work-experience-section {
-background: rgb(127, 228, 107);
+.section__subtitle {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
 }
 
+.section__subtitle_detailed {
+    color: #FB6D3A;
+}
+
+.section__period {
+    margin: 10px 0 8px;
+    color: #A8A8A8;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.section__period-devider {
+    color: black;
+    margin: 0 4px; 
+}
+
+/* projects section */
+/* education section */
+.projects-section,
 .education-section {
-background: rgb(107, 210, 228);
+    margin-top: 40px;
+}
+
+.projects-section ol {
+    margin: 0.5em 0 0;
+    padding: 0;
+    font-weight: 700;
+    list-style-position: inside;
+    text-align: left;
+    color: black;
+}
+
+.projects-section ol li {
+    line-height: 24px;
+    color: #595959;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.projects-section ol li::before {
+    content: "";
+    width: 8px;
+    display: inline-block;
+ }
+
+ .projects-section ol li a {
+    color: #595959;
+    font-weight: 400;
+    text-decoration: none;
+ }
+
+  /* work-experience section */
+.work-experience-section {
+    margin-top: 50px;
+}
+
+.work-experience-item {
+    margin-bottom: 16px;
+}
+
+.work-experience-section ul {
+    list-style: none;
+    margin: 0;
+    margin-left: 14px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    padding: 0;
+}
+
+.work-experience-section li::before {
+    content: "\2022";  
+    color: #000; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 14px; 
+    margin-left: -14px; 
+}
+
+.education-section h5 {
+    margin: 12px 0 0;
 }
